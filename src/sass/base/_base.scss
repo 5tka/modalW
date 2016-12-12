@@ -1,3 +1,122 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+}
+
+fieldset,img{
+	border:0;
+}
+
+img,object,embed{
+	vertical-align:bottom;
+}
+
+address,caption,cite,code,dfn,em,th,var{
+	font-weight:normal;
+	font-style:normal;
+}
+
+ol,ul{
+	list-style:none;
+}
+
+caption,th{
+	text-align:left;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+}
+
+q:before,q:after{
+	content:'';
+}
+
+a *{
+	cursor:pointer;
+}
+
+input,textarea{
+	outline:none;
+}
+
+html{
+	min-width:220px;
+	height:100%;
+}
+
+body{
+	font:12px/1.2 Arial, Helvetica, sans-serif;
+	position:relative;
+	min-width:220px;
+	height:100%;
+	color:#000;
+	background:#fff;
+}
+
+a{
+	text-decoration:none;
+	color:#2600ff;
+}
+
+*{
+	-webkit-transition:all .3s;
+	   -moz-transition:all .3s;
+	     -o-transition:all .3s;
+	        transition:all .3s;
+}
+
+*{
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+}
+*:before,*:after{
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+}
+* ::-moz-selection{
+	color:#fff;
+	background:#2600ff;
+}
+* ::selection{
+	color:#fff;
+	background:#2600ff;
+}
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+	color:#999;
+}
+input:-moz-placeholder,textarea:-moz-placeholder{
+	opacity:1;
+	color:#999;
+}
+input::-moz-placeholder,textarea::-moz-placeholder{
+	opacity:1;
+	color:#999;
+}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{
+	color:#999;
+}
+input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder{
+	color:transparent;
+}
+input:focus:-moz-placeholder,textarea:focus:-moz-placeholder{
+	color:transparent;
+}
+input:focus::-moz-placeholder,textarea:focus::-moz-placeholder{
+	color:transparent;
+}
+input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder{
+	color:transparent;
+}
+input.placeholder,textarea.placeholder{
+	color:#999 !important;
+}
+* {
+	box-sizing: border-box;
+}
 // @import "../../../bower_components/normalize-css/normalize"; // normalize
 // @import "../../../bower_components/reset-css/_reset.scss"; // reset
 

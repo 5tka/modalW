@@ -1,0 +1,64 @@
+.header {
+	display: table;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0px 10px 17px -1px #D1D1D1;
+	-webkit-box-shadow: 0px 10px 17px -1px #D1D1D1;
+	-moz-box-shadow: 0px 10px 17px -1px #D1D1D1;
+	-o-box-shadow: 0px 10px 17px -1px #D1D1D1;
+}
+.header__menu {
+	list-style: none;
+	display: table-row;
+	&_li{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		border-left: 1px solid #b3b3b3;
+		border-bottom: 1px solid #b3b3b3;
+		font-size: 0;
+		height: 94px;
+	}
+	&_link{
+		text-transform: uppercase;
+		display: inline-block;
+		color: #000;
+		&:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			margin-right: 17px;
+		}
+		span {
+			font-size: 24px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&.music:before {
+			background-image: url('../img/music.svg');
+			width: 34px;
+			height: 34px;
+		}
+		&.games:before {
+			background-image: url('../img/games.svg');
+			width: 44px;
+			height: 30px;
+		}
+		&.video:before {
+			background-image: url('../img/video.svg');
+			width: 40px;
+			height: 39px;
+		}
+
+		&:after {
+			content: '';
+			clear: both;
+			display: block;
+		}
+
+	}
+}
+
