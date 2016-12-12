@@ -14,6 +14,15 @@
 	border-radius: 7px;
 	overflow: hidden;
 	border: 1px solid #dedede;
+
+    -webkit-animation-duration: .3s;
+    -moz-animation-duration: .3s;
+    -o-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 .box-content {
 	padding: 10%;

@@ -114,9 +114,68 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder{
 input.placeholder,textarea.placeholder{
 	color:#999 !important;
 }
+
+@-webkit-keyframes zoomIn{
+	0%{
+		-webkit-transform:scale3d(.3, .3, .3);
+		        transform:scale3d(.3, .3, .3);
+		opacity:0;
+	}
+
+	50%{
+		opacity:1;
+	}
+}
+
+@-moz-keyframes zoomIn{
+	0%{
+		-moz-transform:scale3d(.3, .3, .3);
+		     transform:scale3d(.3, .3, .3);
+		opacity:0;
+	}
+
+	50%{
+		opacity:1;
+	}
+}
+
+@-o-keyframes zoomIn{
+	0%{
+		transform:scale3d(.3, .3, .3);
+		opacity:0;
+	}
+
+	50%{
+		opacity:1;
+	}
+}
+
+@keyframes zoomIn{
+	0%{
+		-webkit-transform:scale3d(.3, .3, .3);
+		   -moz-transform:scale3d(.3, .3, .3);
+		        transform:scale3d(.3, .3, .3);
+		opacity:0;
+	}
+
+	50%{
+		opacity:1;
+	}
+}
+
+.zoomIn{
+	-webkit-animation-name:zoomIn;
+	   -moz-animation-name:zoomIn;
+	     -o-animation-name:zoomIn;
+	        animation-name:zoomIn;
+}
+
+
 * {
 	box-sizing: border-box;
 }
+
+
 // @import "../../../bower_components/normalize-css/normalize"; // normalize
 // @import "../../../bower_components/reset-css/_reset.scss"; // reset
 
